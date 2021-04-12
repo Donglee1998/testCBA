@@ -74,7 +74,7 @@
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="index.php?controller=adminpages&action=index">Post List</a>
-                        <a class="collapse-item" href="#">Add Post</a>
+                        <a class="collapse-item" href="index.php?controller=adminpages&action=viewAddPost">Add Post</a>
                         
                         
                     </div>
@@ -93,8 +93,9 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                     
-                        <a class="collapse-item" href="#">Add admin</a>
-                        <a class="collapse-item" href="#">Admin List</a>
+                        <a class="collapse-item" href="index.php?controller=adminadmins&action=viewAddAdmin">Add admin</a>
+                        <a class="collapse-item" href="index.php?controller=adminadmins&action=index">Admin List</a>
+                        <a class="collapse-item" href="index.php?controller=adminadmins&action=viewChangePass">Change Password</a>
                         
                     </div>
                 </div>
@@ -144,7 +145,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION["email_admin"]?></span>
                               
                             </a>
                             <!-- Dropdown - User Information -->
@@ -210,7 +211,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="index.php?controller=adminadmins&action=logout">Logout</a>
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@ require_once('models/basemodel.php');
 require_once('controllers/adminbase_controller.php');
 require_once('models/post.php');
 require_once('models/user.php');
+require_once('models/admin.php');
 session_start();
 if (isset($_GET['controller'])) {
   $controller = $_GET['controller'];
@@ -14,7 +15,7 @@ if (isset($_GET['controller'])) {
     $action = 'index';
   }
 } else {
-  $controller = 'pages';
-  $action = 'home';
+  $controller = 'posts';
+  $action = 'index';
 }	
 require_once('routes.php');

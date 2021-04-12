@@ -18,7 +18,7 @@
             </div>
           </div>
           <div class="xemthem">
-            <a href="#" class="text-xemthem">Xem Thêm<img src="./assets/images/arrow.png"
+            <a href="index.php?controller=posts&action=showPost&id=<?php echo $post->id?>" class="text-xemthem">Xem Thêm<img src="./assets/images/arrow.png"
                 style="padding-left: 5px;padding-bottom: 5px;"></a>
           </div>
         </div>

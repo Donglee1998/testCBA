@@ -31,7 +31,7 @@ foreach ($list as $user) {
 			<?php echo $user->email?>
 		</td>
 		<td>
-			<img style="width: 100px" src="./assets/uploads/<?php echo $user->image?>">
+			<img style="width: 100px; height: 100px" src="./assets/uploads/<?php echo $user->image?>">
 			
 		</td>
 		<td>

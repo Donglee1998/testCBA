@@ -1,9 +1,10 @@
 <?php
 $controllers = array(
-  'pages' => ['home', 'error'],
+  'pages' => ['error'],
   'posts' => ['index', 'showPost'],
   'logins' => ['view', 'login', 'logout', 'showProfile', 'viewRegister', 'register','viewEdit' ,'editPassword'],
-  'adminpages' => ['index', 'viewUserList', 'deleteUser', 'deletePost', 'editPost', 'viewEditPost']
+  'adminpages' => ['index', 'viewUserList', 'deleteUser', 'deletePost', 'editPost', 'viewEditPost', 'viewAddPost', 'addPost'],
+  'adminadmins' => ['index', 'viewLogin', 'viewAddAdmin','addAdmin','viewEditAdmin', 'editAdmin', 'deleteAdmin', 'changePass', 'viewChangePass','login', 'logout']
 
 ); // Các controllers trong hệ thống và các action có thể gọi ra từ controller đó.
 // Nếu các tham số nhận được từ URL không hợp lệ (không thuộc list controller và action có thể gọi

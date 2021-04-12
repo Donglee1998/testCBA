@@ -68,4 +68,10 @@ class Post
     $req = $db->prepare("UPDATE posts SET title='$title', content = '$content', mode = '$mode' WHERE id = '$id'");
     $req->execute();
   }
+
+  static function addPost($title, $content, $mode, $image){
+    $db = DB::getInstance();
+    $req = $db->prepare("INSERT INTO posts(title, content, mode, image) VALUES ('$title', '$content', '$mode', '$image')");
+    $req->execute();
+  }
 }

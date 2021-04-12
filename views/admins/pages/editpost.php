@@ -9,7 +9,7 @@
 			<h4>Title</h4>
 		</td>
 		<td>
-			<input type="text" name="title" value="<?php echo $post->title?>">
+			<input type="text" name="title" value="<?php echo $post->title?>" required>
 		</td>
 	</tr>
 	<tr>
@@ -17,7 +17,7 @@
 			<h4>Content</h4>
 		</td>
 		<td>
-			<textarea name="content" style="width: 600px;height: 100px"  value=""><?php echo $post->content?></textarea>
+			<textarea name="content" style="width: 600px;height: 100px"  value="" required><?php echo $post->content?></textarea>
 		</td>
 	</tr>
 	<tr>

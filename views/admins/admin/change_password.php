@@ -22,7 +22,7 @@
     
     <h2 style="text-align: center;">Form change password</h2>
     <!-- Login Form -->
-    <form method="post" action="index.php?controller=logins&action=editPassword">
+    <form method="post" action="index.php?controller=adminadmins&action=changePass">
     	<table>
     		<tr>
     			<td>
